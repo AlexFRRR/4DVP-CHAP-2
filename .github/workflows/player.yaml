@@ -1,0 +1,29 @@
+name: "Manual Trigger"
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: "Username"
+        required: true
+        type: string
+
+      level:
+        description: "Level"
+        required: true
+        type: string
+
+      class:
+        description: "Choix de la classe"
+        required: true
+        type: choice
+        options:
+          - Jedi
+          - Sith
+          - Rebel
+
+jobs:
+  log-the-input:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Le joueur {{ inputs.username }} est de niveau {{ inputs.level }} et joue la classe {{ inputs.class }}"
