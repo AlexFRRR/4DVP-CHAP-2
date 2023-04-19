@@ -1,0 +1,16 @@
+name: "Multi déclencheur"
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+
+  push:
+
+  workflow_dispatch:
+
+jobs:
+  triggered_by:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Info"
+        run: |
+          echo "Le job à été déclenché par un évènement de type ${{ triggered_by }}"
