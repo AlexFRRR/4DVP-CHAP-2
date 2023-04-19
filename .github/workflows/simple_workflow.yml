@@ -3,6 +3,7 @@ on:
 
 jobs:
   say_hello:
-    name: "Say Hello"
-    run: | 
-      echo "Hello World !"
+    steps:
+      - name: "Say Hello"
+        run: | 
+          echo "Hello World !"
