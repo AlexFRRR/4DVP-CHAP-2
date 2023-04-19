@@ -1,0 +1,12 @@
+name: "A chaque intervalle"
+on:
+  schedule:
+    - cron: "0/1 * * * *"
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Say Hello"
+        run: | 
+          echo "Hello World !"

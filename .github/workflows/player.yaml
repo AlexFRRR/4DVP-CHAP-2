@@ -22,7 +22,7 @@ on:
           - Rebel
 
 jobs:
-  log_the_input:
+  player_infos:
     runs-on: ubuntu-latest
     steps:
       - run: |
