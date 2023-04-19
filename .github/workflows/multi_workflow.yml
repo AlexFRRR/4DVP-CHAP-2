@@ -3,6 +3,7 @@ on:
 
 jobs:
   multi_jobs:
+    runs-on: ubuntu-latest
     steps:
 
       - name: "1er Job"
