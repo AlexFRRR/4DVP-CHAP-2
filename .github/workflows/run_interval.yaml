@@ -1,7 +1,7 @@
 name: "A chaque intervalle"
 on:
   schedule:
-    - cron: "25 * * * *"
+    - cron: "*/10 * * * *"
 
 jobs:
   say_hello:
