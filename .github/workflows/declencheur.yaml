@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: "Info"
         run: |
-          echo "Le job à été déclenché par un évènement de type ${{ triggered_by }}"
+          echo "Le job à été déclenché par un évènement de type ${{ github.event_name }}"
