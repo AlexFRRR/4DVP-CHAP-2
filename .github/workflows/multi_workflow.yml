@@ -1,0 +1,18 @@
+on:
+  push:
+
+jobs:
+  multi_jobs:
+    steps:
+
+      - name: "1er Job"
+        run: | 
+          echo "Ceci est le premier job !"
+
+      - name: "2er Job"
+        run: | 
+          echo "Ceci est le second job !"
+        
+      - name: "3er Job"
+        run: | 
+          echo "Ceci est le troisième job !"
